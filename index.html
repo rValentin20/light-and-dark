@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dark And Light</title>
+    <link rel="stylesheet" href="js/java.js">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+    <div class="container">
+          <h1>Light Mode</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, numquam! Sapiente ducimus culpa hic veniam minima consequatur pariatur similique totam harum in, officia tempore adipisci aut, ad architecto! Velit, pariatur.</p>
+          <button class="switch">
+            <div class="circle"></div>
+          </button>
+    </div>
+    <script>
+      let button = document.querySelector(".switch");
+      let circle = document.querySelector(".circle");
+
+      let mode= "light";
+
+      let title = document.querySelector("h1");
+      let container = document.querySelector(".container");
+
+      function lightMode () {
+          button.className = "switch";
+          container.className = "container";
+          circle.className = "circle";
+          title.textContent = 'Light Mode';
+      }
+
+      function darkMode () {
+          button.className = "darkButton";
+          container.className = "darkContainer";
+          circle.className = "darkCircle";
+          title.textContent = 'Dark Mode';
+      }
+
+      circle.addEventListener("click", () => {
+          if (mode == "light") {
+              darkMode();
+              mode = "dark";
+          } else {
+              lightMode();
+              mode = "light";
+          }
+      })
+
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html> 
