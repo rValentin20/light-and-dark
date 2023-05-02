@@ -3,54 +3,286 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dark And Light</title>
-    <link rel="stylesheet" href="js/java.js">
+    <title>Diseñadora Valentina</title>
+    <link rel="icon" href="assets/logoValentinaDos.ico">
+    <link rel="stylesheet" href="css/vales.scss" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="css/style.css">
-    
   </head>
   <body>
-    <div class="container">
-          <h1>Light Mode</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, numquam! Sapiente ducimus culpa hic veniam minima consequatur pariatur similique totam harum in, officia tempore adipisci aut, ad architecto! Velit, pariatur.</p>
-          <button class="switch">
-            <div class="circle"></div>
-          </button>
+    <!-- mi navegador -->
+    <div class="container-fluid fondonav" id="subir"> 
+      <header class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <nav class="navbar navbar-expand-lg bg-body-transparent modificacionNav">
+            <div class="container-fluid d-flex">
+                <a class="navbar-brand" href="#"><img src="assets/logoValentinaUno.ico" alt="logo" width="30%" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+           
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center navegarodres">
+                      <button class="btnNav">
+                          <li>
+                              <a class="linkNav" aria-current="page" href="index.html">Home</a>
+                          </li>
+                      </button>
+                      <button class="btnNav">
+                          <li>
+                              <a class="linkNav" aria-current="page" href="work.html">Trabajos</a>
+                          </li>
+                      </button>
+                      <button class="btnNav">
+                          <li>
+                              <a class="linkNav" href="habilidades.html">Habilidades</a>
+                          </li>
+                      </button>
+                      <button class="btnNav">
+                          <li>
+                              <a class="linkNav navWriteMe" href="#footer">¡Escribeme!</a>
+                          </li>
+                      </button>
+                  </ul>
+            </div>
+        </nav>
+      </header>
     </div>
-    <script>
-      let button = document.querySelector(".switch");
-      let circle = document.querySelector(".circle");
 
-      let mode= "light";
 
-      let title = document.querySelector("h1");
-      let container = document.querySelector(".container");
+    <div class="container-fluid">
+      <section class="row colorBackground1">
+              <div class="elementsBack col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                  <h1 class="text-center grandeText">Productora Multimedia</h1>
+                  <h2 class="text-center subtitulo">Valentina Chávez Rodríguez</h2>
+              </div>
 
-      function lightMode () {
-          button.className = "switch";
-          container.className = "container";
-          circle.className = "circle";
-          title.textContent = 'Light Mode';
-      }
+              <div class="parallax">
+                
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 cajaNube">
+                    
+                    <img src="assets/yo.png" alt="diseñadora" width="45%" class="cajaYo">
+                  
+                    <div id="nubeIzquierda">
+                  
+                        <video src="assets/pandemia.mp4" autoplay="true" muted="true" loop="true" style="width: 100%;"></video>
+                    </div>
+                  </div> 
+              </div>
+              
+              
+              <!-- fondo -->
+              <div class="circuloFondo"> 
+                  <span class="circuloNube2"></span>
+                  <span class="circuloNube3"></span>
+                  <span class="circuloNube1"></span>
+                  <span class="circuloNube4"></span>
+              </div>
+             
+            </div>
+            <div class="container-fluid fondoSpace">
+              <div class="container">
+                <section class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 row">
+                  
+                </section>
+              </div>
+      </section>
+    </div> 
+    
 
-      function darkMode () {
-          button.className = "darkButton";
-          container.className = "darkContainer";
-          circle.className = "darkCircle";
-          title.textContent = 'Dark Mode';
-      }
 
-      circle.addEventListener("click", () => {
-          if (mode == "light") {
-              darkMode();
-              mode = "dark";
-          } else {
-              lightMode();
-              mode = "light";
-          }
-      })
 
-    </script>
+    <div class="container-fluid fondoSec1">
+      <div class="container">
+        <section class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 row">
+          <h1 class="text-center bottom-title grandeText">"Transformando sueños en una realidad"</h1>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 cardRelative">
+            <div class="burbuja"></div>
+            <div class="card" style="width: 100%;">
+              <div class="card-body">
+                <h2 class="card-title text-center tituloscard">Autobiografía</h2>
+                <p class="card-text">Nací el 20 de marzo de 2004 en Chaparral Tolima. Sin embargo, a los 4 años de edad me mudé a Bogotá, ciudad en la que he residido hasta el día de hoy. Durante mi educación, he tenido la oportunidad de estudiar en cuatro colegios diferentes. Esta experiencia me ha permitido experimentar y descubrir mis intereses, y ha sido fundamental en mi camino hacia mi actual área de estudio y desarrollo personal.</p>
+              </div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 cardRelative">
+            <div class="burbujaDos">
+            </div>
+            <div class="card" style="width: 100%;">
+              <div class="card-body">
+                <div class="burbujita"></div>
+                <h2 class="card-title text-center tituloscard">Gustos</h2>
+                <p class="card-text">
+                  Me apasiona la diversidad de temas relacionados con las manualidades y el arte, por lo que me enfoco en aprender constantemente sobre ellos. Además, entre mis hobbies, disfruto de tocar el piano, la pintura, el dibujo, el baile y otras actividades creativas en mi tiempo libre.</p>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
+
+    <div class="container-fluid fondoSec2">
+      <div class="container">
+        <section class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 row">
+          <h1 class="bottom-title grandeText big2" id="tituloEs">Estudios</h1>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div>
+                <div class="burbujaOpacity"></div>
+                <div class="listaIndex1">
+                  <h2>Primaria</h2>
+                  <ul>
+                    <li>Colegio el Tesoro de la Cumbre <strong class="fechas">2012-2014</strong> </li>
+                    <li>Colegio el fuuturo del mañana <strong class="fechas">2010-2011</strong> </li>
+                  </ul>
+                </div>
+            </div>
+          </article>
+          <article class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+            <div style="width: 100%;">
+              <div>
+                <div class="listaIndex2">
+                  <h2>Secundaria</h2>
+                  <ul>
+                    <li>Colegio Isabel II <strong class="fechas">2015-2015</strong> </li>
+                    <li>Colegio el Tesoro de la Cumbre <strong class="fechas">2016-2020</strong></li>
+                  </ul>
+                </div>
+            </div>
+          </article>
+        </section>
+      </div>
+    </div>
+
+    <div class="container-fluid fondoSec2">
+      <div class="container">
+        
+        <section class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 row">
+          <section class="slider slick-slider">
+            <div class="card" style="width: 20%;">
+              <div class="card-body">
+                <div class="burbujita"></div>
+                <h2 class="card-title text-center tituloscard">Principiante en boostrap</h2>
+                <h6 class="text-center">3 al 7 de abril 2023</h6>
+                <p class="card-text">
+                
+                    Curso introductorio a componentes básicos de Bootstrap, siendo clases guiadas con algunos cuestionarios.
+                  
+                </p>
+                <h7>Plataforma: Coursera</h7>
+              </div>
+              
+            </div>
+            <div class="card" style="width: 40%;">
+              <div class="card-body">
+                <div class="burbujita"></div>
+                <h2 class="card-title text-center tituloscard">Construcción contenido digital</h2>
+                <h6 class="text-center">2021</h6>
+                <p class="card-text">
+                  Desarrollo de habilidades digitales para la construcción de contenido digital.
+                </p>
+                <h7>Plataforma: SofiaPlus</h7>
+              </div>
+            </div>
+            <div class="card" style="width: 40%;">
+              <div class="card-body">
+                <div class="burbujita"></div>
+                <h2 class="card-title text-center tituloscard">Pensamiento Empresarial</h2>
+                <h6 class="text-center">2021</h6>
+                <p class="card-text">
+                
+                  Catedra virtual de pensamiento empresarial modulo 1: mentalidad empresarial.
+                  
+                </p>
+                <h7>Plataforma: SofiaPlus</h7>
+              </div>
+            </div>
+            <div class="card" style="width: 40%;">
+              <div class="card-body">
+                <div class="burbujita"></div>
+                <h2 class="card-title text-center tituloscard">Principiante en boostrap</h2>
+                <h6 class="text-center">3 al 7 de abril 2023</h6>
+                <p class="card-text">
+                
+                    Curso introductorio a componentes básicos de Bootstrap, siendo clases guiadas con algunos cuestionarios.
+                  
+                </p>
+                <h7>Plataforma: Coursera</h7>
+              </div>
+            </div>
+            
+          </section>
+         
+        </section>
+      </div>
+    </div>
+
+    <div class="container-fluid fondoFooter" id="footer">
+      
+      <footer class="row p-5">
+        <section class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="redeste">
+            <a href="https://github.com/rValentin20" target="_blank">
+              <img src="assets/gitHub.png" class="borderRedes" alt="gitHub" width="10%">
+            </a>
+            <a href="https://codepen.io/rValentin20" target="_blank">
+              <img src="assets/codepen.png" class="borderRedes" alt="codepen" width="10%">
+            </a>
+            <a href="https://www.linkedin.com/in/valentina-ch%C3%A1vez-rodr%C3%ADguez-2a14101b3/" target="_blank">
+              <img src="assets/linkedin.png" class="borderRedes" alt="linkedin" width="10%">
+            </a>
+            <a href="https://www.behance.net/valentichavez2" target="_blank">
+              <img src="assets/behance.png" class="borderRedes" alt="Behance" width="10%">
+            </a>
+          </div>
+        </section>
+
+
+
+        <section class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <div class="redes">
+              <form class="row" action="enviar_formulario.php" method="post">
+                  <div class="mb-3 col-6">
+                    <label for="nombre" class="form-label text-light">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text text-light">Coloca tu nombre completo</div>
+                  </div>
+                  <div class="mb-3 col-6">
+                    <label for="celular" class="form-label text-light">Celular</label>
+                    <input type="number" class="form-control" id="celular" name="celular">
+                  </div>
+                  <div class="col-6">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label text-light" for="exampleCheck1">Autorizo contactarme</label>
+                  </div>
+                  <div class="col-6">
+                      <input type="submit" class="btn btn-primary text-dark">Enviar</input>
+                  </div>
+                  
+                </form>
+          </div>
+        </section>
+        <section class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <h1 class="text center">© 2023 Valentina Chávez Rodríguez</h1>
+        </section>
+        <section class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 flechita">
+          <span class="mouse-btn">
+            <span class="mouse-scroll"></span>
+          </span>
+          <a href="#subir" class="text-center"><h4 class="arriba">Arriba</h4></a>
+        </section>
+      </footer>
+    </div>
+
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/valen.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   </body>
 </html> 

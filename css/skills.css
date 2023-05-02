@@ -1,0 +1,653 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0A1D47
+}
+html {
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: glikerBold;
+    src: url(../tipografias/Gliker-Bold.ttf);
+}
+@font-face {
+    font-family: glikerLight;
+    src: url(../tipografias/Gliker-Regular.ttf);
+}
+@font-face {
+    font-family: telegraf;
+    src: url(../tipografias/telegraf.otf);
+}
+.logo:hover {
+    transform: rotate(360deg);
+    transition: 1s;
+    scale: 1rem;
+}
+.modificacionNav {
+    padding: 1rem;
+}
+.navegadores {
+    display: flex;
+    gap: 1rem;
+}
+  
+.btnNav{
+    margin: 1rem;
+    text-decoration: none;
+    border-top: 1px solid #88b8e8;
+    border-left: 1px solid #88b8e8;
+    border-bottom: 1px solid #047BAA;
+    border-right: 1px solid #047BAA;
+    border-radius: 1rem;
+    padding: 5px 5px;
+    background: linear-gradient(to bottom,#458dd5,#047BAA);
+    box-shadow: 0px 3px 5px rgba(13, 45, 104, 0.5), inset 0px 5px 5px rgba(174, 198, 241, 0.7), inset 0px -5px 5px rgba(9, 10, 65, 0.2);
+}
+.btnNav:hover{
+    transition: 0.3s;
+    margin: 1rem;
+    text-decoration: none;
+    border-top: 1px solid #88b8e8;
+    border-left: 1px solid #88b8e8;
+    border-bottom: 1px solid #047BAA;
+    border-right: 1px solid #047BAA;
+    border-radius: 1rem;
+    padding: 5px 5px;
+    background: linear-gradient(to bottom,#458dd5,#047BAA);
+    box-shadow: 0px 10px 2px rgba(13, 45, 104, 0.5), inset 0px 5px 5px rgba(174, 198, 241, 0.7), inset 0px -5px 5px rgba(9, 10, 65, 0.2);
+    transform: translateY(-5px);
+}
+.linkNav:hover{
+    color: white;
+}
+
+.linkNav{
+    font-family: glikerLight;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(201, 213, 228);
+    text-shadow: 0px 2px 2px rgb(39, 32, 84, 0.7);
+}
+.navbar-toggler
+{ 
+    border-top: 2px solid #88b8e8;
+    border-left: 2px solid #88b8e8;
+    border-bottom: 2px solid #047BAA;
+    border-right: 2px solid #047BAA;
+    border-radius: 1rem;
+    padding: 5px 5px;
+    background: linear-gradient(to bottom,#458dd5,#047BAA);
+    box-shadow: 0px 3px 5px  rgba(13, 45, 104, 0.5), inset 0px 5px 5px rgba(174, 198, 241, 0.7), inset 0px -5px 5px rgba(9, 10, 65, 0.2);
+}
+.navWriteMe{
+      color: #f4a261;
+}
+.navWriteMe:hover{
+    color: #e76f51;
+}
+.fondonav, .fondoSkills{
+    background-color: #0A1D47;
+}
+.grandeText{
+    margin-top: 5rem;
+    font-size: 4rem;
+    z-index: 50;
+}
+.skills{
+    margin-top: 8rem;
+}
+h1{
+    font-family: glikerBold;
+    color: #feffff;
+    text-shadow: 0px 3px 7px  rgba(13, 45, 104, 0.5)
+}
+h2{
+    font-family: glikerBold;
+    color: #fb8500;
+    text-align:left;
+    text-shadow: 0px 3px 7px  rgba(13, 45, 104, 0.5)
+}
+h4{
+    
+    color: #e9c46a;
+    font-family: telegraf;
+}
+h6{
+    font-family: glikerLight;
+    color: #e76f51;
+}
+h5 {
+    font-family: glikerLight;
+    color: #bbd2e9;
+}
+h7 {
+    font-family: glikerLight;
+}
+
+p{
+  font-family: glikerLight;  
+}
+p::selection{
+    color: #007FBF;
+    background-color: #e9c46a;
+}
+
+.skillsBurble{
+    border: 2px solid rgba(255, 255, 255, 0.248);
+    position: relative;
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 2px 2px 5px rgb(118, 57, 175);
+    background: #007FBF;
+    border-radius: 50%;
+    box-shadow: 0px 45px 20px -20px rgba(20, 56, 142, 0.376), inset 0px -81px 139px -80px rgba(205,212,235,0.7);
+}
+.burbleMini{
+    position: absolute;
+    content: '';
+    top: 70%;
+    left: 5%;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: rgba(255, 252, 252, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(162, 177, 198, 0.4);
+    box-shadow: inset 0px 25px 7px  rgba(10, 141, 223, 0.277),;
+}
+.burbleMini2{
+    position: absolute;
+    content: '';
+    z-index: 50;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: rgba(255, 252, 252, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(162, 177, 198, 0.4);
+    box-shadow: inset 0px 25px 7px  rgba(10, 141, 223, 0.277),;
+    animation: burble2 8s infinite;
+    transform: translate(1rem);
+    animation-fill-mode: forwards;
+}
+.burbleMini2::after{
+    position: absolute;
+    content: '';
+    top: 20%;
+    left: 20%;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+.burbleMini{
+    animation: burble 2.5s infinite;
+    transform: rotate(0deg);
+    animation-fill-mode: forwards;
+}
+.burbleMini::after{
+    position: absolute;
+    content: '';
+    top: 20%;
+    left: 20%;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, 0.5);
+    
+}
+@keyframes burble2 {
+    from {
+        transform: translateY(30rem);
+        opacity: 0.5;
+    }
+    to {
+        transform: translate(0px);
+        scale: 1.8;
+    }
+   
+}
+@keyframes burble {
+    0% {
+		transform: rotate(0deg);
+        
+    }
+    50% {
+		transform: rotate(180deg);
+        
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+   
+}
+.servicios{
+    overflow: hidden;
+    background-color: #047BAA;
+    width: 100%;
+    height: 120vh;
+}
+
+.nubeser{
+    overflow: cover;
+    position: relative
+}
+.burbujasSer{
+    position: relative;
+}
+/* nubes del fondo */
+.circuloFondo { 
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 70vh;
+}
+.circuloNube1, .circuloNube2, .circuloNube3, .circuloNube4{
+    background-color: #047BAA;
+    border-bottom: 5px solid #6fafc9;
+    box-shadow: 0px 45px 20px -40px rgba(111, 140, 208, 0.5), inset 0px -81px 139px -40px rgba(205,212,235,0.7);
+    transform: rotate(180deg);
+    border-radius: 50%;
+}
+.circuloNube1::after {
+    content:"";
+    position:absolute;
+    width:20%;
+    height:45px;
+    top: 80%;
+    right: 50%;
+    border-radius:100%;
+    background:#ffffff;
+    box-shadow: 0px 0px 20px white;
+    opacity: 0.1;
+    transform: rotate(10deg);
+}
+.circuloNube1 { 
+    position: absolute;
+    width: 40rem;
+    height: 40rem;
+    left: 25%;
+    top: 3%;
+}
+
+.circuloNube2 { 
+    position: absolute;
+    width: 30rem;
+    height: 30rem;
+    left: -1%;
+    top: 10%;
+    
+}
+.circuloNube3{
+    position: absolute;
+    width: 20rem;
+    height: 20rem;
+    left: 78%;
+    top: 10%;
+    
+}
+.circuloNube4{ 
+    position: absolute;
+    width: 25rem;
+    height: 25rem;
+    left: 65%;
+    top: 10%;
+}
+.espacio{
+    background-color: #0A1D47;
+    height: 15rem;
+}
+@media only screen and (max-width: 576px) {
+    .circuloNube1::after {
+        content:"";
+        position:absolute;
+        width:20%;
+        height:45px;
+        top: 80%;
+        right: 50%;
+        border-radius:100%;
+        background:#ffffff;
+        box-shadow: 0px 0px 20px white;
+        opacity: 0.1;
+        transform: rotate(10deg);
+    }
+    .circuloNube1 { 
+        position: absolute;
+        width: 20rem;
+        height: 20rem;
+        left: 18%;
+        top: 4%;
+    }
+    
+    .circuloNube2 { 
+        position: absolute;
+        width: 13rem;
+        height: 13rem;
+        left: -8%;
+        top: 15%;
+        
+    }
+    .circuloNube3{
+        position: absolute;
+        width: 20rem;
+        height: 20rem;
+        left: 60%;
+        top: 10%;
+        
+    }
+    .circuloNube4{ 
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        left: 65%;
+        top: 10%;
+    }
+    .espacio{
+        background-color: #0A1D47;
+        height: 10rem;
+    }
+    .flip-card {
+        margin: 1px;
+        width: 15px;
+        height: 15px;
+        
+    }
+}
+@media only screen and (max-width: 600px) {
+    .circuloNube1::after {
+        content:"";
+        position:absolute;
+        width:20%;
+        height:45px;
+        top: 80%;
+        right: 50%;
+        border-radius:100%;
+        background:#ffffff;
+        box-shadow: 0px 0px 20px white;
+        opacity: 0.1;
+        transform: rotate(10deg);
+    }
+    .circuloNube1 { 
+        position: absolute;
+        width: 20rem;
+        height: 20rem;
+        left: 18%;
+        top: 4%;
+    }
+    
+    .circuloNube2 { 
+        position: absolute;
+        width: 13rem;
+        height: 13rem;
+        left: -8%;
+        top: 15%;
+        
+    }
+    .circuloNube3{
+        position: absolute;
+        width: 20rem;
+        height: 20rem;
+        left: 60%;
+        top: 10%;
+        
+    }
+    .circuloNube4{ 
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        left: 65%;
+        top: 10%;
+    }
+    .espacio{
+        background-color: #0A1D47;
+        height: 10rem;
+    }
+    .servicios{
+        overflow: hidden;
+        background-color: #047BAA;
+        width: 100%;
+        height: 180vh;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+    .circuloNube1::after {
+        content:"";
+        position:absolute;
+        width:20%;
+        height:45px;
+        top: 80%;
+        right: 50%;
+        border-radius:100%;
+        background:#ffffff;
+        box-shadow: 0px 0px 20px white;
+        opacity: 0.1;
+        transform: rotate(10deg);
+    }
+    .circuloNube1 { 
+        position: absolute;
+        width: 25rem;
+        height: 25rem;
+        left: 18%;
+        top: 4%;
+    }
+    
+    .circuloNube2 { 
+        position: absolute;
+        width: 13rem;
+        height: 13rem;
+        left: -1%;
+        top: 15%;
+        
+    }
+    .circuloNube3{
+        position: absolute;
+        width: 20rem;
+        height: 20rem;
+        left: 60%;
+        top: 10%;
+        
+    }
+    .circuloNube4{ 
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        left: 55%;
+        top: 10%;
+    }
+    .espacio{
+        background-color: #0A1D47;
+        height: 10rem;
+    }
+    .servicios{
+        overflow: hidden;
+        background-color: #047BAA;
+        width: 100%;
+        height: 120vh;
+    }
+    
+}
+@media only screen and (max-width: 992px) {
+    .circuloNube1::after {
+        content:"";
+        position:absolute;
+        width:20%;
+        height:45px;
+        top: 80%;
+        right: 50%;
+        border-radius:100%;
+        background:#ffffff;
+        box-shadow: 0px 0px 20px white;
+        opacity: 0.1;
+        transform: rotate(10deg);
+    }
+    .circuloNube1 { 
+        position: absolute;
+        width: 30rem;
+        height: 30rem;
+        left: 20%;
+        top: 4%;
+    }
+    
+    .circuloNube2 { 
+        position: absolute;
+        width: 15rem;
+        height: 15rem;
+        left: -1%;
+        top: 15%;
+        
+    }
+    .circuloNube3{
+        position: absolute;
+        width: 20rem;
+        height: 20rem;
+        left: 70%;
+        top: 10%;
+        
+    }
+    .circuloNube4{ 
+        position: absolute;
+        width: 15rem;
+        height: 15rem;
+        left: 55%;
+        top: 10%;
+    }
+    .espacio{
+        background-color: #0A1D47;
+        height: 15rem;
+    }
+    .servicios{
+        overflow: hidden;
+        background-color: #047BAA;
+        width: 100%;
+        height: 130vh;
+    }
+    .flip-card {
+        margin: 1rem;
+        width: 9rem;
+        height: 20rem;
+        perspective: 1000px;
+    }
+}
+
+.servi{
+    position: relative;
+    z-index: 1;
+}
+/* cartasservicio */
+.flip-card {
+    margin: 1rem;
+    width: 15rem;
+    height: 20rem;
+    perspective: 1000px;
+}
+.cardSer{
+    font-family: glikerLight;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;  
+}
+  
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+  
+.frenteCarta, .detrasCarta {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-bottom: 0.2rem solid #08445c;
+    border-radius: 1rem;
+}
+  
+.frenteCarta {
+    margin: 1rem;
+    background-color: #068fc6;
+    
+}
+  
+.detrasCarta {
+    padding: 2%;
+    color: white;
+    margin: 1rem;
+    background-color: #075b7c;
+    transform: rotateY(180deg);
+}
+
+.fondoFooter {
+    background-color: #0A1D47;
+}
+.borderRedes{
+    border-radius: 60%;
+    background-color: #88b8e8;
+}
+.redeste{
+    margin-bottom: 10rem;
+    justify-content: flex-end;
+}
+
+.mouse-btn {
+    margin: 10px auto;
+    width: 40px;
+    height: 80px;
+    border: 3px solid rgba(122, 122, 124, 0.918);
+    border-radius: 20px;
+    display: flex;
+  }
+  
+  .mouse-scroll {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgba(255, 252, 252, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(162, 177, 198, 0.4);
+    box-shadow: inset 0px 25px 7px  rgba(10, 141, 223, 0.277),;
+    margin: auto;
+    animation: scrolling13 1s linear infinite;
+  }
+  .mouse-scroll::after{
+    position: absolute;
+    content: '';
+    top: 20%;
+    left: 20%;
+    width: 20%;
+    height: 20%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+  @keyframes scrolling13 {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(-20px);
+    }
+  }
+
+a{
+    text-decoration: none;
+}
+.arriba:hover{
+    color: white;
+}
